@@ -6,8 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-       Deployment is happening !
-       Hurray !!!
+       Hi User ! New App is Available ! Please sorry for the Delay !
       </header>
     </div>
   );
