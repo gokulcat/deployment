@@ -1,15 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./index.css";
 
-function App() {
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+  const decrement = () => {
+    setCount(count - 1);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       Hi User ! New App is Available ! Please sorry for the Delay !
-      </header>
+    <div className="container">
+      <h1>Counter : {count}</h1>
+
+      <button onClick={increment}> Increment</button>
+      <br />
+
+      <button onClick={decrement}>Decrement</button>
     </div>
   );
 }
 
-export default App;
+export default Counter;
