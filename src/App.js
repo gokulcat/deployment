@@ -10,14 +10,18 @@ function Counter() {
   const decrement = () => {
     setCount(count - 1);
   };
+  const reset = () => {
+    setCount(0);
+  };
+
   return (
     <div className="container">
       <h1>Counter : {count}</h1>
-
       <button onClick={increment}> Increment</button>
       <br />
-
       <button onClick={decrement}>Decrement</button>
+      <br />
+      <button onClick={reset}>Reset</button>
     </div>
   );
 }
